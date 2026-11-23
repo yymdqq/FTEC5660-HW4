@@ -31,8 +31,177 @@ load_dotenv()
 
 # =============================================================================
 # Your code: add imports, constants and helper functions here.
-# =============================================================================
 
+from bs4 import BeautifulSoup
+from rank_bm25 import BM25Okapi
+
+
+_HW_COMPANIES: dict[str, str] = {}
+_HW_SUFFIXES = {"inc", "corp", "corporation", "ltd", "limited", "plc", "llc", "co"}
+_HW_STOP = set("""a an the and or of in at on to for from with by as its it their
+    what which who how much many more higher was were is are did does do had have has
+    company companies report reported hold held earn earned generate generated give
+    set announce announced end ended year fiscal fy december usd million millions
+    billion percent value amount financial statements share shares fourth quarter q4
+    annual approximately total number""".split())
+
+
+def _hw_text(element) -> str:
+    return re.sub(r"\s+", " ", element.get_text(" ", strip=True)).strip()
+
+
+def _hw_key(text: str) -> str:
+    words = re.findall(r"[a-z0-9]+", unicodedata.normalize("NFKC", text).casefold())
+    return " ".join(w for w in words if w not in _HW_SUFFIXES)
+
+
+def _hw_tokens(text: str) -> list[str]:
+    words = re.findall(r"[a-z]+|\d+(?:[,.]\d+)*", text.casefold())
+    return [w[:-1] if len(w) > 4 and w.endswith("s") else w
+            for w in words if w not in _HW_STOP]
+
+
+def _hw_table_parts(table_html: str) -> tuple[str, list[tuple[str, list[str], list[str]]]]:
+    """Read header and body grids; propagate HTML rowspan/colspan without changing cells."""
+    soup = BeautifulSoup(table_html, "html.parser")
+    table = soup.find("table")
+    if table is None:
+        return "", []
+    caption = _hw_text(table.caption) if table.caption else ""
+    grid, is_header, spans = [], [], {}
+    for tr in table.find_all("tr"):
+        if tr.find_parent("table") is not table:
+            continue
+        cells = tr.find_all(["th", "td"], recursive=False)
+        if not cells:
+            continue
+        row, col, next_spans = [], 0, {}
+
+        def take_span():
+            nonlocal col
+            value, remaining = spans[col]
+            row.append(value)
+            if remaining > 1:
+                next_spans[col] = (value, remaining - 1)
+            col += 1
+
+        for cell in cells:
+            while col in spans:
+                take_span()
+            value = _hw_text(cell)
+            width = max(1, int(cell.get("colspan", 1)))
+            height = max(1, int(cell.get("rowspan", 1)))
+            for _ in range(width):
+                row.append(value)
+                if height > 1:
+                    next_spans[col] = (value, height - 1)
+                col += 1
+        while col in spans:
+            take_span()
+        spans = next_spans
+        header = tr.find_parent("thead") is not None
+        if not grid and not table.find("thead"):
+            header = all(c.name == "th" and c.get("scope") != "row" for c in cells)
+        grid.append(row)
+        is_header.append(header)
+    width = max(map(len, grid), default=0)
+    headers = []
+    for col in range(width):
+        pieces = []
+        for row, header in zip(grid, is_header):
+            if header and col < len(row) and row[col] and row[col] not in pieces:
+                pieces.append(row[col])
+        headers.append(" / ".join(pieces))
+    rows = []
+    for row, header in zip(grid, is_header):
+        if header or not row:
+            continue
+        # A full-width section title is preserved, but has no numerical cells.
+        if len(set(row)) == 1:
+            rows.append((row[0], [], []))
+        else:
+            rows.append((row[0], headers[1:len(row)], row[1:]))
+    return caption, rows
+
+
+def _hw_row_lines(label: str, columns: list[str], values: list[str]) -> list[str]:
+    lines, current = [], label
+    for column, value in zip(columns, values):
+        piece = f" | {column}: {value}"
+        if len(current + piece) > 400 and current != label:
+            lines.append(current)
+            current = label
+        current += piece
+    if current:
+        lines.append(current)
+    return lines
+
+
+def _hw_metadata(file_name: str, soup) -> dict:
+    h1 = soup.find("h1")
+    if h1 is None:
+        raise ValueError(f"No company heading in {file_name}")
+    company = re.sub(r"\s*\([^)]*\)\s*$", "", _hw_text(h1)).strip()
+    opening = " ".join(_hw_text(e) for e in soup.find_all(["h1", "h2", "p"])[:8])
+    if re.search(r"earnings\s+(?:conference\s+)?call", opening, re.I):
+        doc_type = "earnings_call"
+        match = re.search(r"(?:full\s+year|FY)\s*((?:19|20)\d{2})", opening, re.I)
+    elif re.search(r"results\s+review", opening, re.I):
+        doc_type = "research_report"
+        match = re.search(r"FY\s*((?:19|20)\d{2})", opening, re.I)
+    else:
+        doc_type = "annual_report"
+        match = re.search(r"Annual\s+Report\s+((?:19|20)\d{2})", opening, re.I)
+    if match is None:
+        raise ValueError(f"Cannot identify fiscal year in {file_name}")
+    return {"source": file_name, "company": company,
+            "fiscal_year": int(match.group(1)), "doc_type": doc_type}
+
+
+def _hw_metric(question: str) -> tuple[str, str]:
+    """Financial vocabulary, not company-, question- or answer-specific rules."""
+    specs = [
+        (r"net cash (?:from|provided by) operating|operating cash flow", "cash_flow", r"net cash.*operating"),
+        (r"cash(?: and cash equivalents)?", "cash", r"cash and cash equivalents"),
+        (r"long[ -]term borrow", "borrowings", r"long.term borrow"),
+        (r"short[ -]term borrow", "borrowings", r"short.term borrow"),
+        (r"accounts? receivable|receivables?", "receivables", r"(?:receivable.*net|net.*receivable)"),
+        (r"inventor(?:y|ies)", "inventories", r"inventor"),
+        (r"total assets", "assets", r"^total assets$"),
+        (r"total equity", "equity", r"^total equity$"),
+        (r"net income|net profit", "net_income", r"^net (?:income|profit)$"),
+        (r"operating income|operating profit", "operating_income", r"^operating (?:income|profit)$"),
+        (r"gross profit", "gross_profit", r"^gross profit$"),
+        (r"employees|headcount", "employees", r"^total(?: employees)?$"),
+        (r"chief financial officer|\bcfo\b", "cfo", r"chief financial officer"),
+        (r"chief executive officer|\bceo\b", "ceo", r"chief executive officer"),
+        (r"audit firm|auditor|audited", "auditor", r"audit"),
+        (r"headquarter", "headquarters", r"headquarter"),
+        (r"target price", "target", r"target price"),
+        (r"investment rating|\brating\b", "rating", r"rating"),
+        (r"share repurchase|buyback", "repurchase", r"repurchase|buyback"),
+        (r"revenue growth", "growth", r"revenue growth"),
+        (r"revenue|sales", "revenue", r"^revenue$"),
+    ]
+    for pattern, name, row in specs:
+        if re.search(pattern, question, re.I):
+            return name, row
+    return "other", ""
+
+
+def _hw_required_terms(question: str, company: str, metric: str) -> set[str]:
+    text = re.sub(re.escape(company), " ", question, flags=re.I)
+    # Remove the financial measure, retaining qualifiers such as a region, segment,
+    # or 'largest single customer'. These must also be supported by the evidence.
+    measure_words = """revenue sales cash equivalent account receivable net operating
+        activity long short term borrowing inventory asset equity income profit gross
+        employee headcount""".split()
+    more_stop = {"s", "in", "since", "during", "spend", "spent", "per", "statement",
+                 "segment", "region", "earn", "generate", "report", "hold", "have"}
+    return {w for w in _hw_tokens(text)
+            if w.isalpha() and w not in set(measure_words) | more_stop}
+
+# =============================================================================
 
 def table_to_text(table_html: str) -> str:
     """Task 1.1: turn one HTML <table> into text that keeps every value with its row and its column.
@@ -43,8 +212,11 @@ def table_to_text(table_html: str) -> str:
     LLM here.
     """
     ### YOUR CODE HERE
-    return ""
-
+    caption, rows = _hw_table_parts(table_html)
+    lines = [caption] if caption else []
+    for label, columns, values in rows:
+        lines.extend(_hw_row_lines(label, columns, values))
+    return "\n".join(lines)
 
 def chunk_document(file_name: str, html: str) -> list[Document]:
     """Task 1.2: split one document into chunks of at most MAX_CHUNK_CHARS characters.
@@ -53,7 +225,61 @@ def chunk_document(file_name: str, html: str) -> list[Document]:
     "doc_type" (one of DOC_TYPES). Do not call the LLM here.
     """
     ### YOUR CODE HERE
-    return []
+    soup = BeautifulSoup(html, "html.parser")
+    for node in soup.find_all(["script", "style", "nav"]):
+        node.decompose()
+    metadata = _hw_metadata(file_name, soup)
+    _HW_COMPANIES[_hw_key(metadata["company"])] = metadata["company"]
+    chunks, section = [], ""
+
+    def emit(text: str, extra: dict) -> None:
+        # Only the documented metadata and an original section title form the header.
+        header = f"{metadata['company']} | FY{metadata['fiscal_year']} | {section}\n"
+        if len(header) > 450:
+            header = header[:450] + "\n"
+        room = MAX_CHUNK_CHARS - len(header)
+        remaining = text.strip()
+        while remaining:
+            end = min(room, len(remaining))
+            if end < len(remaining):
+                split = remaining.rfind(" ", max(1, end - 150), end)
+                if split > 0:
+                    end = split
+            body = remaining[:end].strip()
+            if body:
+                chunks.append(Document(page_content=header + body,
+                                       metadata={**metadata, "section": section, **extra}))
+            if end == len(remaining):
+                break
+            # Overlap protects names/numbers at the rare long-paragraph boundary.
+            remaining = remaining[max(1, end - 120):].lstrip()
+
+    root = soup.body or soup
+    for node in root.find_all(["h1", "h2", "h3", "p", "li", "table"]):
+        if node.find_parent("table") is not None:
+            continue
+        if node.name in {"h1", "h2", "h3"}:
+            section = _hw_text(node)
+            emit(section, {"kind": "text"})
+        elif node.name == "table":
+            rendered = table_to_text(str(node))
+            caption, rows = _hw_table_parts(str(node))
+            # table_to_text is the sole source of the rendered table text.
+            lines = rendered.splitlines()
+            cursor = 1 if caption else 0
+            for label, columns, values in rows:
+                count = len(_hw_row_lines(label, columns, values))
+                row_text = "\n".join(lines[cursor:cursor + count])
+                cursor += count
+                years = sorted({int(y) for y in re.findall(r"(?:19|20)\d{2}", " ".join(columns))})
+                if not years:
+                    years = sorted({int(y) for y in re.findall(r"(?:19|20)\d{2}", caption)})
+                emit((caption + "\n" if caption else "") + row_text,
+                     {"kind": "table", "row_label": label, "table_caption": caption,
+                      "data_years": years})
+        elif node.find_parent(["p", "li"]) is None:
+            emit(_hw_text(node), {"kind": "text"})
+    return chunks
 
 
 def parse_query(question: str) -> dict:
@@ -62,7 +288,49 @@ def parse_query(question: str) -> dict:
     The rules for each field are under Task 2.2 in the handout. You may use make_llm() here.
     """
     ### YOUR CODE HERE
-    return {}
+    q = question.replace("’", "'")
+    year_match = re.search(r"\b(?:FY\s*)?((?:19|20)\d{2})\b", q, re.I)
+    if re.search(r"earnings\s+(?:conference\s+)?call", q, re.I):
+        doc_type = "earnings_call"
+    elif re.search(r"\brating\b|target price|\bforecast\b|results review|\bbroker\b|\bestimate\b", q, re.I):
+        doc_type = "research_report"
+    else:
+        doc_type = "annual_report"
+    names = []
+    comparison = re.search(r":\s*(.+?)\s+or\s+(.+?)\s*[?.]?\s*$", q, re.I)
+    if comparison:
+        names = [comparison.group(1), comparison.group(2).rstrip("?. ")]
+    else:
+        # A possessive captures the full named entity, so 'A Robotics Systems'
+        # must never silently resolve to a shorter company called 'A Robotics'.
+        possessive = re.search(r"\b((?:[A-Z][A-Za-z0-9&.-]*\s+){1,6}[A-Z][A-Za-z0-9&.-]*)'(?:s\b|(?=\s))", q)
+        if possessive:
+            names = [possessive.group(1)]
+        if not names:
+            patterns = [
+                r"\b(?:did|does)\s+(.+?)\s+(?:hold|report|earn|generate|announce|have)\b",
+                r"\bis\s+(.+?)\s+headquartered\b",
+                r"\bfor\s+(.+?)(?=,\s*in\b|\s+in\s+(?:its\b|FY\d)|[?])",
+                r"\bgive\s+(.+?)\s+in\s+its\b",
+            ]
+            for pattern in patterns:
+                match = re.search(pattern, q, re.I)
+                if match:
+                    names = [match.group(1)]
+                    break
+        if not names:
+            padded = " " + _hw_key(q) + " "
+            names = [name for key, name in _HW_COMPANIES.items() if f" {key} " in padded]
+    cleaned, seen = [], set()
+    for name in names:
+        name = name.strip(" \t\n?.:;\"'")
+        key = _hw_key(name)
+        if key and key not in seen:
+            cleaned.append(name)
+            seen.add(key)
+    return {"companies": cleaned,
+            "fiscal_year": int(year_match.group(1)) if year_match else None,
+            "doc_type": doc_type}
 
 
 def build_index(chunks: list[Document]) -> Any:
@@ -71,7 +339,15 @@ def build_index(chunks: list[Document]) -> Any:
     Return anything retrieve() needs: a BM25 or TF-IDF index, the chunks grouped by metadata, ...
     """
     ### YOUR CODE HERE
-    return None
+    groups = {}
+    for i, chunk in enumerate(chunks):
+        key = _hw_key(chunk.metadata.get("company", ""))
+        groups.setdefault(key, []).append(i)
+        if key:
+            _HW_COMPANIES[key] = chunk.metadata["company"]
+    tokens = [_hw_tokens(c.page_content) or [""] for c in chunks]
+    return {"chunks": chunks, "groups": groups,
+            "bm25": BM25Okapi(tokens, k1=1.4, b=0.65) if chunks else None}
 
 
 def retrieve(index: Any, question: str) -> list[Document]:
@@ -80,7 +356,102 @@ def retrieve(index: Any, question: str) -> list[Document]:
     Return [] when the corpus cannot answer the question: the generator then answers NOT_FOUND.
     """
     ### YOUR CODE HERE
-    return []
+    if not index.get("chunks"):
+        return []
+    query = parse_query(question)
+    names, year, doc_type = query["companies"], query["fiscal_year"], query["doc_type"]
+    if not names or any(_hw_key(n) not in index["groups"] for n in names):
+        return []
+    metric, row_pattern = _hw_metric(question)
+    scores = index["bm25"].get_scores(_hw_tokens(question))
+    ranked_groups = []
+    numeric_measures = {"cash_flow", "cash", "borrowings", "receivables", "inventories",
+                        "assets", "equity", "net_income", "operating_income", "gross_profit",
+                        "employees", "revenue"}
+    for name in names:
+        candidates = []
+        required = _hw_required_terms(question, name, metric) if metric in numeric_measures and len(names) == 1 and doc_type == "annual_report" else set()
+        for i in index["groups"][_hw_key(name)]:
+            chunk = index["chunks"][i]
+            meta, body = chunk.metadata, chunk.page_content
+            if meta.get("doc_type") != doc_type:
+                continue
+            is_table = meta.get("kind") == "table"
+            years = meta.get("data_years", [])
+            if year is not None:
+                if is_table and years:
+                    if year not in years:
+                        continue
+                elif meta.get("fiscal_year") != year and not re.search(str(year), body):
+                    continue
+            body_tokens = set(_hw_tokens(body))
+            if required and not required.issubset(body_tokens):
+                continue
+            row = meta.get("row_label", "").casefold()
+            caption = meta.get("table_caption", "").casefold()
+            section = meta.get("section", "").casefold()
+            score = float(scores[i]) * 0.15
+            supported = False
+            if metric in numeric_measures:
+                if metric == "employees":
+                    supported = is_table and "employee" in caption and bool(re.search(row_pattern, row))
+                elif metric == "revenue" and re.search(r"segment|\bregion\b|generate in", question, re.I):
+                    supported = is_table and "revenue" in caption and ("segment" in caption or "region" in caption)
+                else:
+                    supported = is_table and bool(re.search(row_pattern, row))
+                if supported:
+                    score += 100
+                    if metric == "cash_flow" and "cash flow" in caption:
+                        score += 10
+                    if metric == "receivables" and "balance sheet" in caption:
+                        score += 10
+                    if metric == "revenue" and "income statement" in caption:
+                        score += 10
+            elif metric in {"cfo", "ceo"}:
+                supported = bool(re.search(row_pattern, body, re.I))
+                score += 100 if supported else 0
+                if supported and is_table and "executive" in caption:
+                    score += 30
+            elif metric == "auditor":
+                supported = "audited" in body.casefold() and meta.get("kind") == "text"
+                score += 100 if supported else 0
+            elif metric == "headquarters":
+                supported = bool(re.search(row_pattern, body, re.I))
+                score += 100 if supported else 0
+            elif metric in {"target", "rating", "repurchase", "growth"}:
+                supported = bool(re.search(row_pattern, body, re.I))
+                score += 100 if supported else 0
+                if metric == "rating" and body.split("\n")[-1].casefold().startswith("rating:"):
+                    score += 20
+            else:
+                terms = set(_hw_tokens(question)) - set(_hw_tokens(name))
+                terms = {t for t in terms if t.isalpha()}
+                supported = bool(terms) and terms.issubset(body_tokens)
+                score += 100 if supported else 0
+            if not supported:
+                continue
+            if year is not None and meta.get("fiscal_year") == year:
+                score += 5
+            # Prefer compact, unambiguous source passages over broad narrative.
+            score -= len(body) / 10000
+            candidates.append((score, i))
+        if not candidates:
+            return []
+        candidates.sort(key=lambda pair: (-pair[0], pair[1]))
+        candidates = [pair for pair in candidates if pair[0] >= candidates[0][0] - 15]
+        ranked_groups.append(candidates)
+    # Round robin guarantees evidence for every named company in comparisons.
+    result, seen = [], set()
+    per_company = max(1, MAX_RETRIEVED // len(ranked_groups))
+    for rank in range(min(per_company, 3)):
+        for group in ranked_groups:
+            if rank < len(group):
+                chunk = index["chunks"][group[rank][1]]
+                signature = (chunk.metadata["source"], chunk.page_content)
+                if signature not in seen:
+                    result.append(chunk)
+                    seen.add(signature)
+    return result[:MAX_RETRIEVED]
 
 
 # =============================================================================
