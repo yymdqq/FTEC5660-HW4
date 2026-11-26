@@ -1,0 +1,7 @@
+{
+  "variants_expected": 10,
+  "variants_available": 10,
+  "online_complete": true,
+  "pending_online": [],
+  "note": "The report must not be described as a fully measured online ablation until online_complete is true."
+}

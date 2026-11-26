@@ -1,0 +1,69 @@
+{
+  "python": "3.11.0",
+  "documents": 40,
+  "questions": 60,
+  "chunks": 4308,
+  "recall_at_5": 1.0,
+  "kept": 1.0,
+  "rejected": 0.0,
+  "parse_accuracy": 1.0,
+  "category_recall": {
+    "comparison": 1.0,
+    "fact": 1.0,
+    "table": 1.0
+  },
+  "points_offline": {
+    "1.1": 8.0,
+    "1.2": 7.0,
+    "2.1": 5.0,
+    "2.2": 10.0,
+    "2.3": 15.0,
+    "3": 0.0
+  },
+  "offline_points": 45.0,
+  "offline_maximum": 55,
+  "index_seconds": 2.045054499991238,
+  "offline_seconds": 2.9077949000056833,
+  "answer_accuracy": 0.9833333333333333,
+  "end_to_end_seconds": 9.200437300023623,
+  "student_usage": {
+    "llm_calls": 0,
+    "llm_input_tokens": 0,
+    "llm_output_tokens": 0,
+    "cost_usd": 0.0
+  },
+  "generator_usage": {
+    "llm_calls": 60,
+    "llm_input_tokens": 33032,
+    "llm_output_tokens": 211,
+    "cost_usd": 0.0051
+  },
+  "variant": "V7",
+  "change": "Per-company balanced selection",
+  "features": {
+    "tables": true,
+    "tokenizer": true,
+    "metadata": true,
+    "row_chunks": true,
+    "headers": true,
+    "metric_rank": true,
+    "balance": true,
+    "evidence_budget": false,
+    "abstention": false
+  },
+  "hw4_sha256": "9561ac164aaacc631b151272c988785dc9bc61bdb8747ffb3f8e18dd6b893146",
+  "provided_sha256": "0b580fdabae5fe69324d3bef62d82f418e8fe17b7155659c92bc198680fa0b2d",
+  "script_sha256": "1e765d91f2edbfa8eac43409f710b96f884aefe0187a187af167366321432dd2",
+  "dataset_sha256": "6c9cad34ae3374485e304cbee11108affb4ff8b5d2b799057ecd4f90a87f776e",
+  "wrong_answer_ids": [
+    "q044"
+  ],
+  "category_accuracy": {
+    "comparison": 1.0,
+    "fact": 1.0,
+    "table": 1.0,
+    "unanswerable": 0.9285714285714286
+  },
+  "generator_error_count": 0,
+  "status": "ONLINE_COMPLETE"
+}

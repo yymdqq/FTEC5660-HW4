@@ -1,0 +1,3226 @@
+{
+  "q001": {
+    "question": "How much cash and cash equivalents did Northgate Robotic Systems hold at 31 December 2025, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Northgate Robotic Systems"
+    ],
+    "requested_year": 2025,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_013.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc. (NGR)"
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_014.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc. (NYSE: NGR)"
+      }
+    ]
+  },
+  "q002": {
+    "question": "What was Brightwater Software's revenue in FY2025, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Software"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_020.html",
+          "1,574.7"
+        ],
+        [
+          "doc_021.html",
+          "1,574.7"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Software Inc."
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Software Inc. All rights reserved."
+      },
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Brightwater Software Inc. All rights reserved."
+      },
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of strong progress for Brightwater Software. Revenue reached USD 1.6 billion, up 24.3% on 2024, and our operating margin was 18.8%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Software Inc. was founded in 1995 and sells cloud software for finance, procurement and supply-chain teams. We serve mid-sized and large enterprises in 54 countries. Our headquarters are in Austin."
+      }
+    ]
+  },
+  "q003": {
+    "question": "Which company had more employees at 31 December 2024: Northgate Payments or Northgate Robotics?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Payments",
+      "Northgate Robotics"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_011.html",
+          "2,897"
+        ],
+        [
+          "doc_039.html",
+          "2,897"
+        ]
+      ],
+      [
+        [
+          "doc_028.html",
+          "8,073"
+        ],
+        [
+          "doc_038.html",
+          "8,073"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "Northgate Payments Corp."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Payments Corp. All rights reserved."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of steady progress for Northgate Robotics. Revenue reached USD 2.6 billion, up 5.1% on 2023, and our operating margin was 11.7%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q004": {
+    "question": "Which company had the higher net income in FY2024: Kestrel Semiconductor or Halcyon Freight?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Kestrel Semiconductor",
+      "Halcyon Freight"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_005.html",
+          "460.1"
+        ],
+        [
+          "doc_017.html",
+          "460.1"
+        ],
+        [
+          "doc_026.html",
+          "460.1"
+        ]
+      ],
+      [
+        [
+          "doc_008.html",
+          "173.9"
+        ],
+        [
+          "doc_016.html",
+          "173.9"
+        ],
+        [
+          "doc_035.html",
+          "173.9"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "Kestrel Semiconductor Ltd."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Kestrel Semiconductor Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Halcyon Freight Inc. was founded in 1985 and moves freight by road and rail and runs warehouses on behalf of customers. We serve retailers, manufacturers and e-commerce platforms in 59 countries. Our headquarters are in Memphis."
+      }
+    ]
+  },
+  "q005": {
+    "question": "What were Halcyon Freight's total assets at 31 December 2022, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Halcyon Freight"
+    ],
+    "requested_year": 2022,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_035.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc. (HFRT)"
+      },
+      {
+        "source": "doc_030.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc. (NYSE: HFRT)"
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Halcyon Freight Inc. All rights reserved."
+      }
+    ]
+  },
+  "q006": {
+    "question": "What was Kestrel Semiconductor's operating income in FY2022, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Kestrel Semiconductor"
+    ],
+    "requested_year": 2022,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "Kestrel Semiconductor Ltd."
+      },
+      {
+        "source": "doc_026.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd."
+      },
+      {
+        "source": "doc_017.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd. (KSTL)"
+      },
+      {
+        "source": "doc_029.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd. (NASDAQ: KSTL)"
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Kestrel Semiconductor Ltd. All rights reserved."
+      }
+    ]
+  },
+  "q007": {
+    "question": "What investment rating does Kowloon Peak Securities give Brightwater Energy in its FY2025 results review?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Energy"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_019.html",
+          "BUY"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_019.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "This report was prepared by Kowloon Peak Securities for its institutional clients. It is not an offer to buy or sell securities. Ratings: BUY (expected total return above 12%), HOLD (between -5% and 12%), REDUCE (below -5%) over 12 months."
+      },
+      {
+        "source": "doc_019.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Energy Corp. (BWE)"
+      },
+      {
+        "source": "doc_019.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "FY2025 results review: momentum intact, upside remains"
+      },
+      {
+        "source": "doc_019.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Financial summary and Kowloon Peak Securities estimates (USD millions, except per-share data and ratios)\nRevenue | FY2024A: 2,252.2 | FY2025A: 2,436.3 | FY2026E: 2,754.0 | FY2027E: 3,067.1"
+      },
+      {
+        "source": "doc_019.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Energy Corp. reported FY2025 revenue of USD 2,436.3 million (+8.2% year on year) and operating income of USD 566.7 million. Management guided to revenue growth of approximately 12.5% for FY2026. We reiterate our BUY rating with a target price of USD 82.62."
+      }
+    ]
+  },
+  "q008": {
+    "question": "On its fourth-quarter earnings call, what revenue growth did Corvane Pharma's management guide for FY2026, in percent?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Corvane Pharma"
+    ],
+    "requested_year": 2026,
+    "required_facts": [
+      [
+        [
+          "doc_009.html",
+          "8.5%"
+        ],
+        [
+          "doc_033.html",
+          "8.5%"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_009.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "Now to our outlook. For fiscal 2026, we expect revenue growth of approximately 8.5%, and an operating margin of 19 to 21 percent. This assumes no major change in exchange rates or in the macroeconomic environment."
+      },
+      {
+        "source": "doc_009.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "Date: 7 February 2026"
+      },
+      {
+        "source": "doc_009.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "How should we think about the margin bridge into 2026?"
+      },
+      {
+        "source": "doc_009.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "Pricing remained constructive. We implemented targeted increases at the start of the year, and retention has been good. We do not expect the same level of price increases in 2026."
+      }
+    ]
+  },
+  "q009": {
+    "question": "What was Sablewood Retail's revenue in FY2025, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Sablewood Retail"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_004.html",
+          "2,390.3"
+        ],
+        [
+          "doc_010.html",
+          "2,390.3"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_004.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "Sablewood Retail Inc."
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Sablewood Retail Inc. All rights reserved."
+      },
+      {
+        "source": "doc_004.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Sablewood Retail Inc. All rights reserved."
+      },
+      {
+        "source": "doc_004.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of steady progress for Sablewood Retail. Revenue reached USD 2.4 billion, up 2.5% on 2024, and our operating margin was 8.5%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_004.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "Industry: Specialty retail"
+      }
+    ]
+  },
+  "q010": {
+    "question": "Who was Brightwater Software's Chief Executive Officer at the end of FY2025?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Software"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_020.html",
+          "Yara Castillo"
+        ],
+        [
+          "doc_034.html",
+          "Yara Castillo"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Software Inc."
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Software Inc. All rights reserved."
+      },
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Brightwater Software Inc. All rights reserved."
+      },
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "Executive officers at 31 December 2025\nYara Castillo | Title: Chief Executive Officer | In role since: 2018"
+      },
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "Executive officers at 31 December 2025\nRachel Maddox | Title: Chief Financial Officer | In role since: 2017"
+      }
+    ]
+  },
+  "q011": {
+    "question": "What was Halcyon Air Cargo's revenue in FY2024, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Halcyon Air Cargo"
+    ],
+    "requested_year": 2024,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_035.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc. (HFRT)"
+      },
+      {
+        "source": "doc_030.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc. (NYSE: HFRT)"
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Halcyon Freight Inc. All rights reserved."
+      }
+    ]
+  },
+  "q012": {
+    "question": "How much long-term borrowing did Northgate Robotics report at 31 December 2024, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Robotics"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_028.html",
+          "838.4"
+        ],
+        [
+          "doc_038.html",
+          "838.4"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "Borrowings at 31 December (USD millions)\nLong-term borrowings | 2024: 838.4 | 2023: 883.2"
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Borrowings at 31 December (USD millions)\nLong-term borrowings | 2025: 1,027.1 | 2024: 838.4"
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "Consolidated balance sheet at 31 December (USD millions)\nLong-term borrowings | 31 December 2024: 838.4 | 31 December 2023: 883.2"
+      }
+    ]
+  },
+  "q013": {
+    "question": "Which company had the higher net income in FY2024: Brightwater Energy or Orchid Bay Hotels?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Energy",
+      "Orchid Bay Hotels"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_003.html",
+          "369.1"
+        ],
+        [
+          "doc_019.html",
+          "369.1"
+        ],
+        [
+          "doc_032.html",
+          "369.1"
+        ]
+      ],
+      [
+        [
+          "doc_001.html",
+          "166.6"
+        ],
+        [
+          "doc_002.html",
+          "166.6"
+        ],
+        [
+          "doc_037.html",
+          "166.6"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Orchid Bay Hotels Ltd."
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Orchid Bay Hotels Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Orchid Bay Hotels Ltd. was founded in 1975 and owns, manages and franchises hotels and serviced apartments. We serve leisure travellers, corporate clients and event organisers in 46 countries. Our headquarters are in Hong Kong."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Energy Corp. All rights reserved."
+      }
+    ]
+  },
+  "q014": {
+    "question": "Who was Halcyon Freight's Chief Financial Officer at the end of FY2025?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Halcyon Freight"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_016.html",
+          "Rachel Nyberg"
+        ],
+        [
+          "doc_030.html",
+          "Rachel Nyberg"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc. was founded in 1985 and moves freight by road and rail and runs warehouses on behalf of customers. We serve retailers, manufacturers and e-commerce platforms in 59 countries. Our headquarters are in Memphis."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Executive officers at 31 December 2025\nRachel Nyberg | Title: Chief Financial Officer | In role since: 2025"
+      }
+    ]
+  },
+  "q015": {
+    "question": "Which audit firm audited Lumen Harbor Foods' financial statements for FY2025?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Lumen Harbor Foods"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_023.html",
+          "Whitlock Byrne LLP"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "Lumen Harbor Foods plc"
+      },
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "© 2025 Lumen Harbor Foods plc. All rights reserved."
+      },
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "© 2026 Lumen Harbor Foods plc. All rights reserved."
+      },
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "Lumen Harbor Foods plc was founded in 1961 and produces and sells branded and private-label packaged foods. We serve supermarket chains, convenience stores and food-service distributors in 51 countries. Our headquarters are in Manchester."
+      },
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "2025 was a challenging year for Lumen Harbor Foods. Revenue reached USD 1.8 billion, up 1.6% on 2024, and our operating margin was 14.9%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q016": {
+    "question": "What was Corvane Pharma's gross profit in FY2024, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Corvane Pharma"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_024.html",
+          "1,805.4"
+        ],
+        [
+          "doc_031.html",
+          "1,805.4"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "Corvane Pharma Ltd."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Corvane Pharma Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "Consolidated income statement for the year ended 31 December (USD millions, except per-share data)\nGross profit | 2024: 1,805.4 | 2023: 1,590.0"
+      },
+      {
+        "source": "doc_031.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "Consolidated income statement for the year ended 31 December (USD millions, except per-share data)\nGross profit | 2025: 2,083.5 | 2024: 1,805.4"
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "Corvane Pharma Ltd. was founded in 1975 and discovers, develops and markets prescription medicines. We serve hospitals, specialty pharmacies and wholesalers in 12 countries. Our headquarters are in Boston."
+      }
+    ]
+  },
+  "q017": {
+    "question": "Which company had more total assets at 31 December 2025: Brightwater Energy or Brightwater Software?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Energy",
+      "Brightwater Software"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_032.html",
+          "3,627.6"
+        ]
+      ],
+      [
+        [
+          "doc_020.html",
+          "1,326.9"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Software Inc."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Energy Corp. All rights reserved."
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Software Inc. All rights reserved."
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Brightwater Energy Corp. All rights reserved."
+      }
+    ]
+  },
+  "q018": {
+    "question": "On its Q4 FY2025 earnings call, how large a share repurchase programme did Northgate Payments announce, in USD millions?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Payments"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_025.html",
+          "75"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_025.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2025,
+        "content": "Good morning, and welcome to the Northgate Payments Corp. fourth quarter and full year 2025 earnings conference call. All participants are in listen-only mode. I would now like to hand the call over to Gabriel Park."
+      },
+      {
+        "source": "doc_025.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2025,
+        "content": "Fourth Quarter and Full Year 2025 Earnings Conference Call"
+      },
+      {
+        "source": "doc_025.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2025,
+        "content": "Northgate Payments Corp. (NASDAQ: NGPY)"
+      },
+      {
+        "source": "doc_025.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2025,
+        "content": "Turning to capital allocation, the board has approved a new share repurchase programme of up to USD 75 million, to be executed over the next 18 months, in addition to our regular dividend."
+      },
+      {
+        "source": "doc_025.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2025,
+        "content": "Call participants"
+      }
+    ]
+  },
+  "q019": {
+    "question": "What were Brightwater Energy's lobbying expenses in FY2025, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Brightwater Energy"
+    ],
+    "requested_year": 2025,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Energy Corp. All rights reserved."
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Brightwater Energy Corp. All rights reserved."
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of strong progress for Brightwater Energy. Revenue reached USD 2.4 billion, up 8.2% on 2024, and our operating margin was 23.3%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Industry: Energy"
+      }
+    ]
+  },
+  "q020": {
+    "question": "How much revenue did Brightwater Energy's Midstream segment generate in FY2025, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Energy"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_032.html",
+          "716.6"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Revenue by segment (USD millions)\nMidstream | 2025: 716.6 | 2024: 659.1"
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Midstream. The Midstream segment accounted for about 29% of revenue in 2025. It competes mainly on quality, reliability and service."
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Energy Corp. All rights reserved."
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Brightwater Energy Corp. All rights reserved."
+      }
+    ]
+  },
+  "q021": {
+    "question": "Which company held more cash and cash equivalents at 31 December 2024: Northgate Robotics or Northgate Payments?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Robotics",
+      "Northgate Payments"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_028.html",
+          "215.7"
+        ],
+        [
+          "doc_038.html",
+          "215.7"
+        ]
+      ],
+      [
+        [
+          "doc_011.html",
+          "114.5"
+        ],
+        [
+          "doc_039.html",
+          "114.5"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "Northgate Payments Corp."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Payments Corp. All rights reserved."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "Northgate Robotics Inc. was founded in 1981 and designs and manufactures robotic arms, motion controllers and machine-vision systems. We serve automotive, electronics and food-processing manufacturers in 26 countries. Our headquarters are in Pittsburgh."
+      }
+    ]
+  },
+  "q022": {
+    "question": "Which company had more total assets at 31 December 2024: Northgate Payments or Orchid Bay Hotels?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Payments",
+      "Orchid Bay Hotels"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_011.html",
+          "841.1"
+        ],
+        [
+          "doc_039.html",
+          "841.1"
+        ]
+      ],
+      [
+        [
+          "doc_001.html",
+          "1,416.9"
+        ],
+        [
+          "doc_002.html",
+          "1,416.9"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Orchid Bay Hotels Ltd."
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Orchid Bay Hotels Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "Northgate Payments Corp."
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Orchid Bay Hotels Ltd. was founded in 1975 and owns, manages and franchises hotels and serviced apartments. We serve leisure travellers, corporate clients and event organisers in 46 countries. Our headquarters are in Hong Kong."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Payments Corp. All rights reserved."
+      }
+    ]
+  },
+  "q023": {
+    "question": "Which company held more cash and cash equivalents at 31 December 2024: Lumen Harbor Foods or Sablewood Retail?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Lumen Harbor Foods",
+      "Sablewood Retail"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_023.html",
+          "445.1"
+        ],
+        [
+          "doc_036.html",
+          "445.1"
+        ]
+      ],
+      [
+        [
+          "doc_004.html",
+          "507.2"
+        ],
+        [
+          "doc_018.html",
+          "507.2"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "Lumen Harbor Foods plc"
+      },
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "© 2025 Lumen Harbor Foods plc. All rights reserved."
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "Sablewood Retail Inc."
+      },
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "Lumen Harbor Foods plc was founded in 1961 and produces and sells branded and private-label packaged foods. We serve supermarket chains, convenience stores and food-service distributors in 51 countries. Our headquarters are in Manchester."
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Sablewood Retail Inc. All rights reserved."
+      }
+    ]
+  },
+  "q024": {
+    "question": "How much revenue did Orchid Bay Hotels generate in Asia Pacific in FY2023, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Orchid Bay Hotels"
+    ],
+    "requested_year": 2023,
+    "required_facts": [
+      [
+        [
+          "doc_001.html",
+          "316.2"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Revenue by region (USD millions)\nAsia Pacific | 2024: 349.0 | 2023: 316.2"
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of strong progress for Orchid Bay Hotels. Revenue reached about USD 950 million, up 12.9% on 2023, and our operating margin was 24.5%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Revenue by segment (USD millions)\nOwned Hotels | 2024: 228.8 | 2023: 194.3"
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Revenue increased 12.9% to USD 945.6 million in 2024 from USD 837.3 million in 2023. Owned Hotels revenue grew 17.8%. Managed and Franchised revenue grew 15.2%. Food and Beverage revenue grew 7.0%."
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Revenue by segment (USD millions)\nTotal revenue | 2024: 945.6 | 2023: 837.3"
+      }
+    ]
+  },
+  "q025": {
+    "question": "How much did Corvane Pharma spend on carbon offset purchases in FY2025, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Corvane Pharma"
+    ],
+    "requested_year": 2025,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_031.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "Corvane Pharma Ltd."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Corvane Pharma Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_031.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Corvane Pharma Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_031.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of strong progress for Corvane Pharma. Revenue reached USD 3.1 billion, up 15.2% on 2024, and our operating margin was 20.5%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_031.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "Corvane Pharma Ltd. was founded in 1975 and discovers, develops and markets prescription medicines. We serve hospitals, specialty pharmacies and wholesalers in 12 countries. Our headquarters are in Boston."
+      }
+    ]
+  },
+  "q026": {
+    "question": "How much long-term borrowing did Halcyon Freight report at 31 December 2023, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Halcyon Freight"
+    ],
+    "requested_year": 2023,
+    "required_facts": [
+      [
+        [
+          "doc_008.html",
+          "446.9"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Borrowings at 31 December (USD millions)\nLong-term borrowings | 2024: 551.8 | 2023: 446.9"
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Consolidated balance sheet at 31 December (USD millions)\nLong-term borrowings | 31 December 2024: 551.8 | 31 December 2023: 446.9"
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Borrowings at 31 December (USD millions)\nShort-term borrowings | 2024: 51.0 | 2023: 47.0"
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Consolidated balance sheet at 31 December (USD millions)\nShort-term borrowings | 31 December 2024: 51.0 | 31 December 2023: 47.0"
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of steady progress for Halcyon Freight. Revenue reached USD 1.9 billion, up 3.1% on 2023, and our operating margin was 13.9%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q027": {
+    "question": "In which city is Halcyon Freight headquartered?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Halcyon Freight"
+    ],
+    "requested_year": null,
+    "required_facts": [
+      [
+        [
+          "doc_008.html",
+          "Memphis"
+        ],
+        [
+          "doc_016.html",
+          "Memphis"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Halcyon Freight Inc. was founded in 1985 and moves freight by road and rail and runs warehouses on behalf of customers. We serve retailers, manufacturers and e-commerce platforms in 59 countries. Our headquarters are in Memphis."
+      }
+    ]
+  },
+  "q028": {
+    "question": "What was Northgate Robotics' net cash from operating activities in FY2021, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Northgate Robotics"
+    ],
+    "requested_year": 2021,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_013.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc. (NGR)"
+      },
+      {
+        "source": "doc_014.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc. (NYSE: NGR)"
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Robotics Inc. All rights reserved."
+      }
+    ]
+  },
+  "q029": {
+    "question": "What FY2026 revenue does Meridian Equity Research forecast for Sablewood Retail, in USD millions?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Sablewood Retail"
+    ],
+    "requested_year": 2026,
+    "required_facts": [
+      [
+        [
+          "doc_010.html",
+          "2,605.8"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_010.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "Peer valuation\nSablewood Retail Inc. | Ticker: SBWR | P/E FY2026E (x): 15.5"
+      },
+      {
+        "source": "doc_010.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "Financial summary and Meridian Equity Research estimates (USD millions, except per-share data and ratios)\nRevenue | FY2024A: 2,332.4 | FY2025A: 2,390.3 | FY2026E: 2,605.8 | FY2027E: 2,862.6"
+      },
+      {
+        "source": "doc_010.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "Financial summary and Meridian Equity Research estimates (USD millions, except per-share data and ratios)\nRevenue growth (%) | FY2024A: 3.7 | FY2025A: 2.5 | FY2026E: 9.0 | FY2027E: 9.9"
+      },
+      {
+        "source": "doc_010.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "Sablewood Retail Inc. reported FY2025 revenue of USD 2,390.3 million (+2.5% year on year) and operating income of USD 204.2 million. Management guided to revenue growth of approximately 8.5% for FY2026. We reiterate our HOLD rating with a target price of USD 66.36."
+      },
+      {
+        "source": "doc_010.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "Financial summary and Meridian Equity Research estimates (USD millions, except per-share data and ratios)\nOperating income | FY2024A: 210.8 | FY2025A: 204.2 | FY2026E: 228.7 | FY2027E: 269.4"
+      }
+    ]
+  },
+  "q030": {
+    "question": "How much cash and cash equivalents did Brightwater Energy hold at 31 December 2025, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Energy"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_032.html",
+          "363.2"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Energy Corp. All rights reserved."
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nCash and cash equivalents at end of year | 2025: 363.2 | 2024: 303.8"
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nCash and cash equivalents at beginning of year | 2025: 303.8 | 2024: 350.8"
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Brightwater Energy Corp. All rights reserved."
+      }
+    ]
+  },
+  "q031": {
+    "question": "Which company had the higher net income in FY2024: Brightwater Software or Brightwater Energy?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Software",
+      "Brightwater Energy"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_020.html",
+          "200.3"
+        ],
+        [
+          "doc_021.html",
+          "200.3"
+        ],
+        [
+          "doc_027.html",
+          "200.3"
+        ]
+      ],
+      [
+        [
+          "doc_003.html",
+          "369.1"
+        ],
+        [
+          "doc_019.html",
+          "369.1"
+        ],
+        [
+          "doc_032.html",
+          "369.1"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "Brightwater Software Inc."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Energy Corp. All rights reserved."
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Software Inc. All rights reserved."
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "Brightwater Software Inc. was founded in 1995 and sells cloud software for finance, procurement and supply-chain teams. We serve mid-sized and large enterprises in 54 countries. Our headquarters are in Austin."
+      }
+    ]
+  },
+  "q032": {
+    "question": "What was Orchid Bay Hotels' revenue in FY2021, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Orchid Bay Hotels"
+    ],
+    "requested_year": 2021,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Orchid Bay Hotels Ltd."
+      },
+      {
+        "source": "doc_002.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2025,
+        "content": "Orchid Bay Hotels Ltd."
+      },
+      {
+        "source": "doc_037.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2025,
+        "content": "Orchid Bay Hotels Ltd. (1876)"
+      },
+      {
+        "source": "doc_022.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2025,
+        "content": "Orchid Bay Hotels Ltd. (HKEX: 1876)"
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Orchid Bay Hotels Ltd. All rights reserved."
+      }
+    ]
+  },
+  "q033": {
+    "question": "How much revenue did Northgate Robotics earn from its largest single customer in FY2025, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Northgate Robotics"
+    ],
+    "requested_year": 2025,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of steady progress for Northgate Robotics. Revenue reached USD 2.7 billion, up 3.1% on 2024, and our operating margin was 13.0%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc. was founded in 1981 and designs and manufactures robotic arms, motion controllers and machine-vision systems. We serve automotive, electronics and food-processing manufacturers in 26 countries. Our headquarters are in Pittsburgh."
+      }
+    ]
+  },
+  "q034": {
+    "question": "What were Kestrel Microdevices' total assets at 31 December 2024, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Kestrel Microdevices"
+    ],
+    "requested_year": 2024,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "Kestrel Semiconductor Ltd."
+      },
+      {
+        "source": "doc_026.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd."
+      },
+      {
+        "source": "doc_017.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd. (KSTL)"
+      },
+      {
+        "source": "doc_029.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd. (NASDAQ: KSTL)"
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Kestrel Semiconductor Ltd. All rights reserved."
+      }
+    ]
+  },
+  "q035": {
+    "question": "What 12-month target price does BuyFin Capital set for Kestrel Semiconductor's shares in its FY2025 results review, in USD?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Kestrel Semiconductor"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_017.html",
+          "61.16"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_017.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "12-month target price: USD 61.16"
+      },
+      {
+        "source": "doc_017.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "This report was prepared by BuyFin Capital for its institutional clients. It is not an offer to buy or sell securities. Ratings: BUY (expected total return above 12%), HOLD (between -5% and 12%), REDUCE (below -5%) over 12 months."
+      },
+      {
+        "source": "doc_017.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd. (KSTL)"
+      },
+      {
+        "source": "doc_017.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd. reported FY2025 revenue of USD 2,409.4 million (+10.7% year on year) and operating income of USD 695.0 million. Management guided to revenue growth of approximately 9% for FY2026. We reiterate our REDUCE rating with a target price of USD 61.16."
+      },
+      {
+        "source": "doc_017.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "FY2025 results review: growth slowing, valuation stretched"
+      }
+    ]
+  },
+  "q036": {
+    "question": "What was Northgate Payments' operating income in FY2024, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Payments"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_011.html",
+          "236.6"
+        ],
+        [
+          "doc_012.html",
+          "236.6"
+        ],
+        [
+          "doc_039.html",
+          "236.6"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "Northgate Payments Corp."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Payments Corp. All rights reserved."
+      },
+      {
+        "source": "doc_011.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of strong progress for Northgate Payments. Revenue reached USD 1.3 billion, up 15.0% on 2024, and our operating margin was 21.0%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of strong progress for Northgate Payments. Revenue reached USD 1.2 billion, up 15.3% on 2023, and our operating margin was 20.4%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "Northgate Payments Corp. was founded in 1974 and processes card and account-to-account payments for merchants, banks and marketplaces. We serve retailers, online marketplaces and regional banks in 48 countries. Our headquarters are in Charlotte."
+      }
+    ]
+  },
+  "q037": {
+    "question": "Which company had the higher operating income in FY2024: Northgate Robotics or Brightwater Software?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Robotics",
+      "Brightwater Software"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_013.html",
+          "307.6"
+        ],
+        [
+          "doc_028.html",
+          "307.6"
+        ],
+        [
+          "doc_038.html",
+          "307.6"
+        ]
+      ],
+      [
+        [
+          "doc_020.html",
+          "260.1"
+        ],
+        [
+          "doc_021.html",
+          "260.1"
+        ],
+        [
+          "doc_027.html",
+          "260.1"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "Brightwater Software Inc."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Software Inc. All rights reserved."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of steady progress for Northgate Robotics. Revenue reached USD 2.6 billion, up 5.1% on 2023, and our operating margin was 11.7%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q038": {
+    "question": "What was Halcyon Freight's net income in FY2024, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Halcyon Freight"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_008.html",
+          "173.9"
+        ],
+        [
+          "doc_016.html",
+          "173.9"
+        ],
+        [
+          "doc_035.html",
+          "173.9"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Halcyon Freight Inc. was founded in 1985 and moves freight by road and rail and runs warehouses on behalf of customers. We serve retailers, manufacturers and e-commerce platforms in 59 countries. Our headquarters are in Memphis."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "Operating income and net income"
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of steady progress for Halcyon Freight. Revenue reached USD 1.9 billion, up 3.1% on 2023, and our operating margin was 13.9%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q039": {
+    "question": "What was Halcyon Freight's customer churn rate in FY2025, in percent?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Halcyon Freight"
+    ],
+    "requested_year": 2025,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc. was founded in 1985 and moves freight by road and rail and runs warehouses on behalf of customers. We serve retailers, manufacturers and e-commerce platforms in 59 countries. Our headquarters are in Memphis."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of steady progress for Halcyon Freight. Revenue reached USD 1.9 billion, up 2.6% on 2024, and our operating margin was 13.9%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q040": {
+    "question": "What was the value of Kestrel Semiconductor's inventories at 31 December 2025, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Kestrel Semiconductor"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_026.html",
+          "162.6"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_026.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd."
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Kestrel Semiconductor Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_026.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Kestrel Semiconductor Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_026.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "The semiconductor industry is cyclical. In a downturn, customers reduce orders and draw down their inventories, and our fabs run below capacity."
+      },
+      {
+        "source": "doc_026.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of strong progress for Kestrel Semiconductor. Revenue reached USD 2.4 billion, up 10.7% on 2024, and our operating margin was 28.8%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q041": {
+    "question": "How much cash and cash equivalents did Brightwater Mining hold at 31 December 2025, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Brightwater Mining"
+    ],
+    "requested_year": 2025,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_002.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2025,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nCash and cash equivalents at end of year | 2025: 203.5 | 2024: 205.8"
+      },
+      {
+        "source": "doc_004.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2025,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nCash and cash equivalents at end of year | 2025: 529.7 | 2024: 507.2"
+      },
+      {
+        "source": "doc_011.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2025,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nCash and cash equivalents at end of year | 2025: 112.5 | 2024: 114.5"
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nCash and cash equivalents at end of year | 2025: 332.8 | 2024: 417.5"
+      },
+      {
+        "source": "doc_020.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2025,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nCash and cash equivalents at end of year | 2025: 330.7 | 2024: 244.9"
+      }
+    ]
+  },
+  "q042": {
+    "question": "Who was Brightwater Energy's Chief Financial Officer at the end of FY2024?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Energy"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_003.html",
+          "William Petrov"
+        ],
+        [
+          "doc_032.html",
+          "William Petrov"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Energy Corp. All rights reserved."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "Industry: Energy"
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "Energy transition"
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "2024 was a challenging year for Brightwater Energy. Revenue reached USD 2.3 billion, up 0.2% on 2023, and our operating margin was 22.8%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q043": {
+    "question": "How much revenue did Halcyon Freight's Intermodal segment generate in FY2025, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Halcyon Freight"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_016.html",
+          "586.6"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Revenue by segment (USD millions)\nIntermodal | 2025: 586.6 | 2024: 529.9"
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Intermodal. The Intermodal segment accounted for about 31% of revenue in 2025. It competes mainly on quality, reliability and service."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Halcyon Freight Inc. All rights reserved."
+      }
+    ]
+  },
+  "q044": {
+    "question": "What was Orchid Bay Resorts' operating income in FY2024, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Orchid Bay Resorts"
+    ],
+    "requested_year": 2024,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "Orchid Bay Hotels Ltd."
+      },
+      {
+        "source": "doc_002.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2025,
+        "content": "Orchid Bay Hotels Ltd."
+      },
+      {
+        "source": "doc_037.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2025,
+        "content": "Orchid Bay Hotels Ltd. (1876)"
+      },
+      {
+        "source": "doc_022.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2025,
+        "content": "Orchid Bay Hotels Ltd. (HKEX: 1876)"
+      },
+      {
+        "source": "doc_001.html",
+        "company": "Orchid Bay Hotels Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Orchid Bay Hotels Ltd. All rights reserved."
+      }
+    ]
+  },
+  "q045": {
+    "question": "How much revenue did Lumen Harbor Foods' Bakery segment generate in FY2024, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Lumen Harbor Foods"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_023.html",
+          "634.6"
+        ],
+        [
+          "doc_036.html",
+          "634.6"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "Lumen Harbor Foods plc"
+      },
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "© 2025 Lumen Harbor Foods plc. All rights reserved."
+      },
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "Lumen Harbor Foods plc was founded in 1961 and produces and sells branded and private-label packaged foods. We serve supermarket chains, convenience stores and food-service distributors in 51 countries. Our headquarters are in Manchester."
+      },
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "Revenue by segment (USD millions)\nBakery | 2025: 671.2 | 2024: 634.6"
+      },
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "Revenue by segment (USD millions)\nBakery | 2024: 634.6 | 2023: 616.9"
+      }
+    ]
+  },
+  "q046": {
+    "question": "What was Sablewood Retail's gross profit in FY2023, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Sablewood Retail"
+    ],
+    "requested_year": 2023,
+    "required_facts": [
+      [
+        [
+          "doc_018.html",
+          "897.8"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "Consolidated income statement for the year ended 31 December (USD millions, except per-share data)\nGross profit | 2024: 932.2 | 2023: 897.8"
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of steady progress for Sablewood Retail. Revenue reached USD 2.3 billion, up 3.7% on 2023, and our operating margin was 9.0%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "Accounts receivable at 31 December (USD millions)\nTrade receivables, gross | 2024: 509.1 | 2023: 484.6"
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "Gross margin was 40.0%, compared with 39.9% in 2023. Selling, general and administrative expenses were 30.9% of revenue."
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "Revenue by segment (USD millions)\nStores | 2024: 952.7 | 2023: 887.6"
+      }
+    ]
+  },
+  "q047": {
+    "question": "What were Corvane Pharma's total assets at 31 December 2024, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Corvane Pharma"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_024.html",
+          "2,711.4"
+        ],
+        [
+          "doc_031.html",
+          "2,711.4"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "Corvane Pharma Ltd."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Corvane Pharma Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "Corvane Pharma Ltd. was founded in 1975 and discovers, develops and markets prescription medicines. We serve hospitals, specialty pharmacies and wholesalers in 12 countries. Our headquarters are in Boston."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of strong progress for Corvane Pharma. Revenue reached USD 2.6 billion, up 14.4% on 2023, and our operating margin was 19.3%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_031.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of strong progress for Corvane Pharma. Revenue reached USD 3.1 billion, up 15.2% on 2024, and our operating margin was 20.5%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q048": {
+    "question": "Who was Northgate Robotics' Chief Financial Officer at the end of FY2025?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Robotics"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_014.html",
+          "Thomas Kaur"
+        ],
+        [
+          "doc_038.html",
+          "Thomas Kaur"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc. was founded in 1981 and designs and manufactures robotic arms, motion controllers and machine-vision systems. We serve automotive, electronics and food-processing manufacturers in 26 countries. Our headquarters are in Pittsburgh."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Executive officers at 31 December 2025\nThomas Kaur | Title: Chief Financial Officer | In role since: 2025"
+      }
+    ]
+  },
+  "q049": {
+    "question": "What was Brightwater Energy's operating income in FY2022, in USD millions?",
+    "category": "unanswerable",
+    "answerable": false,
+    "expected_companies": [
+      "Brightwater Energy"
+    ],
+    "requested_year": 2022,
+    "required_facts": [],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_032.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_019.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Energy Corp. (BWE)"
+      },
+      {
+        "source": "doc_006.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2025,
+        "content": "Brightwater Energy Corp. (TSX: BWE)"
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Energy Corp. All rights reserved."
+      }
+    ]
+  },
+  "q050": {
+    "question": "How much revenue did Brightwater Software generate in Europe, Middle East and Africa in FY2023, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Software"
+    ],
+    "requested_year": 2023,
+    "required_facts": [
+      [
+        [
+          "doc_027.html",
+          "493.5"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "Revenue by region (USD millions)\nEurope, Middle East and Africa | 2024: 565.1 | 2023: 493.5"
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of strong progress for Brightwater Software. Revenue reached USD 1.3 billion, up 22.0% on 2023, and our operating margin was 20.5%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "Revenue by segment (USD millions)\nTotal revenue | 2024: 1,266.8 | 2023: 1,038.4"
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "Revenue by region (USD millions)\nTotal revenue | 2024: 1,266.8 | 2023: 1,038.4"
+      },
+      {
+        "source": "doc_027.html",
+        "company": "Brightwater Software Inc.",
+        "fiscal_year": 2024,
+        "content": "Revenue increased 22.0% to USD 1,266.8 million in 2024 from USD 1,038.4 million in 2023. Cloud Subscriptions revenue grew 27.3%. Licenses revenue grew 13.9%. Professional Services revenue grew 26.4%."
+      }
+    ]
+  },
+  "q051": {
+    "question": "What were Northgate Robotics' net accounts receivable at 31 December 2025, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Robotics"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_038.html",
+          "492.1"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Accounts receivable at 31 December (USD millions)\nAccounts receivable, net | 2025: 492.1 | 2024: 477.3"
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Northgate Robotics Inc."
+      },
+      {
+        "source": "doc_028.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Northgate Robotics Inc. All rights reserved."
+      },
+      {
+        "source": "doc_038.html",
+        "company": "Northgate Robotics Inc.",
+        "fiscal_year": 2025,
+        "content": "Consolidated balance sheet at 31 December (USD millions)\nAccounts receivable, net | 31 December 2025: 492.1 | 31 December 2024: 477.3"
+      }
+    ]
+  },
+  "q052": {
+    "question": "What were Kestrel Semiconductor's total assets at 31 December 2024, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Kestrel Semiconductor"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_005.html",
+          "3,175.5"
+        ],
+        [
+          "doc_026.html",
+          "3,175.5"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "Kestrel Semiconductor Ltd."
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Kestrel Semiconductor Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "Industry: Semiconductors"
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of strong progress for Kestrel Semiconductor. Revenue reached USD 2.2 billion, up 8.4% on 2023, and our operating margin was 27.9%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_026.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of strong progress for Kestrel Semiconductor. Revenue reached USD 2.4 billion, up 10.7% on 2024, and our operating margin was 28.8%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q053": {
+    "question": "Which company had more employees at 31 December 2024: Brightwater Energy or Corvane Pharma?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Brightwater Energy",
+      "Corvane Pharma"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_003.html",
+          "2,520"
+        ],
+        [
+          "doc_032.html",
+          "2,520"
+        ]
+      ],
+      [
+        [
+          "doc_024.html",
+          "4,958"
+        ],
+        [
+          "doc_031.html",
+          "4,958"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "Corvane Pharma Ltd."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "Brightwater Energy Corp."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Corvane Pharma Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_003.html",
+        "company": "Brightwater Energy Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Brightwater Energy Corp. All rights reserved."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of strong progress for Corvane Pharma. Revenue reached USD 2.6 billion, up 14.4% on 2023, and our operating margin was 19.3%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q054": {
+    "question": "What was the value of Lumen Harbor Foods' inventories at 31 December 2025, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Lumen Harbor Foods"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_023.html",
+          "297.4"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "Lumen Harbor Foods plc"
+      },
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "© 2025 Lumen Harbor Foods plc. All rights reserved."
+      },
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "© 2026 Lumen Harbor Foods plc. All rights reserved."
+      },
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "Lumen Harbor Foods plc was founded in 1961 and produces and sells branded and private-label packaged foods. We serve supermarket chains, convenience stores and food-service distributors in 51 countries. Our headquarters are in Manchester."
+      },
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "2025 was a challenging year for Lumen Harbor Foods. Revenue reached USD 1.8 billion, up 1.6% on 2024, and our operating margin was 14.9%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q055": {
+    "question": "How much cash and cash equivalents did Sablewood Retail hold at 31 December 2023, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Sablewood Retail"
+    ],
+    "requested_year": 2023,
+    "required_facts": [
+      [
+        [
+          "doc_018.html",
+          "456.2"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nCash and cash equivalents at end of year | 2024: 507.2 | 2023: 456.2"
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nCash and cash equivalents at beginning of year | 2024: 456.2 | 2023: 450.3"
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nNet increase (decrease) in cash and cash equivalents | 2024: 51.0 | 2023: 5.9"
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "Consolidated balance sheet at 31 December (USD millions)\nCash and cash equivalents | 31 December 2024: 507.2 | 31 December 2023: 456.2"
+      },
+      {
+        "source": "doc_018.html",
+        "company": "Sablewood Retail Inc.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of steady progress for Sablewood Retail. Revenue reached USD 2.3 billion, up 3.7% on 2023, and our operating margin was 9.0%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q056": {
+    "question": "Which company held more cash and cash equivalents at 31 December 2025: Kestrel Semiconductor or Lumen Harbor Foods?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Kestrel Semiconductor",
+      "Lumen Harbor Foods"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_026.html",
+          "495.3"
+        ]
+      ],
+      [
+        [
+          "doc_023.html",
+          "437.4"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "Lumen Harbor Foods plc"
+      },
+      {
+        "source": "doc_036.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2024,
+        "content": "© 2025 Lumen Harbor Foods plc. All rights reserved."
+      },
+      {
+        "source": "doc_023.html",
+        "company": "Lumen Harbor Foods plc",
+        "fiscal_year": 2025,
+        "content": "© 2026 Lumen Harbor Foods plc. All rights reserved."
+      },
+      {
+        "source": "doc_026.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "Kestrel Semiconductor Ltd."
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Kestrel Semiconductor Ltd. All rights reserved."
+      }
+    ]
+  },
+  "q057": {
+    "question": "What was Northgate Payments' net cash from operating activities in FY2024, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Northgate Payments"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_011.html",
+          "153.8"
+        ],
+        [
+          "doc_039.html",
+          "153.8"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [],
+    "chunks": [
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "Northgate Payments Corp."
+      },
+      {
+        "source": "doc_011.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2025,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nNet cash from operating activities | 2025: 223.7 | 2024: 153.8"
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nNet cash from operating activities | 2024: 153.8 | 2023: 200.4"
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Northgate Payments Corp. All rights reserved."
+      },
+      {
+        "source": "doc_039.html",
+        "company": "Northgate Payments Corp.",
+        "fiscal_year": 2024,
+        "content": "Consolidated cash flow statement for the year ended 31 December (USD millions)\nOperating activities"
+      }
+    ]
+  },
+  "q058": {
+    "question": "Which company had more total assets at 31 December 2025: Halcyon Freight or Corvane Pharma?",
+    "category": "comparison",
+    "answerable": true,
+    "expected_companies": [
+      "Halcyon Freight",
+      "Corvane Pharma"
+    ],
+    "requested_year": 2025,
+    "required_facts": [
+      [
+        [
+          "doc_016.html",
+          "1,948.6"
+        ]
+      ],
+      [
+        [
+          "doc_031.html",
+          "3,079.9"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1,
+      2
+    ],
+    "chunks": [
+      {
+        "source": "doc_031.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "Corvane Pharma Ltd."
+      },
+      {
+        "source": "doc_016.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2025,
+        "content": "Halcyon Freight Inc."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Corvane Pharma Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_008.html",
+        "company": "Halcyon Freight Inc.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Halcyon Freight Inc. All rights reserved."
+      },
+      {
+        "source": "doc_031.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "© 2026 Corvane Pharma Ltd. All rights reserved."
+      }
+    ]
+  },
+  "q059": {
+    "question": "Who was Corvane Pharma's Chief Financial Officer at the end of FY2024?",
+    "category": "fact",
+    "answerable": true,
+    "expected_companies": [
+      "Corvane Pharma"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_024.html",
+          "William Lambert"
+        ],
+        [
+          "doc_031.html",
+          "William Lambert"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "Corvane Pharma Ltd."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Corvane Pharma Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "Corvane Pharma Ltd. was founded in 1975 and discovers, develops and markets prescription medicines. We serve hospitals, specialty pharmacies and wholesalers in 12 countries. Our headquarters are in Boston."
+      },
+      {
+        "source": "doc_024.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of strong progress for Corvane Pharma. Revenue reached USD 2.6 billion, up 14.4% on 2023, and our operating margin was 19.3%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_031.html",
+        "company": "Corvane Pharma Ltd.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of strong progress for Corvane Pharma. Revenue reached USD 3.1 billion, up 15.2% on 2024, and our operating margin was 20.5%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  },
+  "q060": {
+    "question": "What was Kestrel Semiconductor's total equity at 31 December 2024, in USD millions?",
+    "category": "table",
+    "answerable": true,
+    "expected_companies": [
+      "Kestrel Semiconductor"
+    ],
+    "requested_year": 2024,
+    "required_facts": [
+      [
+        [
+          "doc_005.html",
+          "2,083.1"
+        ],
+        [
+          "doc_026.html",
+          "2,083.1"
+        ]
+      ]
+    ],
+    "missing_fact_groups": [
+      1
+    ],
+    "chunks": [
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "Kestrel Semiconductor Ltd."
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "© 2025 Kestrel Semiconductor Ltd. All rights reserved."
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "Industry: Semiconductors"
+      },
+      {
+        "source": "doc_005.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2024,
+        "content": "2024 was a year of strong progress for Kestrel Semiconductor. Revenue reached USD 2.2 billion, up 8.4% on 2023, and our operating margin was 27.9%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      },
+      {
+        "source": "doc_026.html",
+        "company": "Kestrel Semiconductor Ltd.",
+        "fiscal_year": 2025,
+        "content": "2025 was a year of strong progress for Kestrel Semiconductor. Revenue reached USD 2.4 billion, up 10.7% on 2024, and our operating margin was 28.8%. I want to thank our employees, customers and partners for their commitment throughout the year."
+      }
+    ]
+  }
+}

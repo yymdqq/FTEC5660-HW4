@@ -1,0 +1,91 @@
+{
+  "python": "3.11.0",
+  "documents": 40,
+  "questions": 60,
+  "chunks": 4308,
+  "recall_at_5": 0.4782608695652174,
+  "kept": 1.0,
+  "rejected": 0.0,
+  "parse_accuracy": 1.0,
+  "category_recall": {
+    "comparison": 0.0,
+    "fact": 0.75,
+    "table": 0.5909090909090909
+  },
+  "points_offline": {
+    "1.1": 8.0,
+    "1.2": 7.0,
+    "2.1": 5.0,
+    "2.2": 10.0,
+    "2.3": 0.0,
+    "3": 0.0
+  },
+  "offline_points": 30.0,
+  "offline_maximum": 55,
+  "index_seconds": 2.078873599995859,
+  "offline_seconds": 2.557518399989931,
+  "answer_accuracy": 0.6166666666666667,
+  "end_to_end_seconds": 8.059430699999211,
+  "student_usage": {
+    "llm_calls": 0,
+    "llm_input_tokens": 0,
+    "llm_output_tokens": 0,
+    "cost_usd": 0.0
+  },
+  "generator_usage": {
+    "llm_calls": 60,
+    "llm_input_tokens": 26533,
+    "llm_output_tokens": 176,
+    "cost_usd": 0.0041
+  },
+  "variant": "V4",
+  "change": "HTML paragraphs and table-row chunks",
+  "features": {
+    "tables": true,
+    "tokenizer": true,
+    "metadata": true,
+    "row_chunks": true,
+    "headers": false,
+    "metric_rank": false,
+    "balance": false,
+    "evidence_budget": false,
+    "abstention": false
+  },
+  "hw4_sha256": "9561ac164aaacc631b151272c988785dc9bc61bdb8747ffb3f8e18dd6b893146",
+  "provided_sha256": "0b580fdabae5fe69324d3bef62d82f418e8fe17b7155659c92bc198680fa0b2d",
+  "script_sha256": "1e765d91f2edbfa8eac43409f710b96f884aefe0187a187af167366321432dd2",
+  "dataset_sha256": "6c9cad34ae3374485e304cbee11108affb4ff8b5d2b799057ecd4f90a87f776e",
+  "wrong_answer_ids": [
+    "q002",
+    "q003",
+    "q004",
+    "q013",
+    "q015",
+    "q017",
+    "q021",
+    "q022",
+    "q023",
+    "q031",
+    "q036",
+    "q037",
+    "q038",
+    "q040",
+    "q042",
+    "q047",
+    "q052",
+    "q053",
+    "q054",
+    "q056",
+    "q058",
+    "q059",
+    "q060"
+  ],
+  "category_accuracy": {
+    "comparison": 0.0,
+    "fact": 0.75,
+    "table": 0.6363636363636364,
+    "unanswerable": 1.0
+  },
+  "generator_error_count": 0,
+  "status": "ONLINE_COMPLETE"
+}

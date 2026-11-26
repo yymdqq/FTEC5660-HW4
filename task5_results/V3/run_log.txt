@@ -1,0 +1,34 @@
+40 documents, 60 questions
+
+Task 1.1 table_to_text: 100.0% of the table cells kept with their labels
+Task 1.2 chunk_document: 100.0% of the documents pass
+368 chunks to index
+Index built in 1.1s | {'llm_calls': 0, 'llm_input_tokens': 0, 'llm_output_tokens': 0, 'cost_usd': 0.0}
+Wrote C:\Users\于沈豪\Desktop\FTEC5660-HW4-main\task5_results\V3\results.csv
+Task 2.1 valid, non-empty retrieval on answerable questions: 100.0%
+Task 2.2 parse_query fields right: 100.0%
+Task 2.3 retrieval recall@5 on answerable questions: 43.5%
+Task 3   answerable questions with chunks: 100.0% | unanswerable questions with []: 0.0%
+Task 4   answer accuracy: 60.0%
+
+By category       accuracy   recall
+  comparison         8.3%     0.0%
+  fact              75.0%    75.0%
+  table             54.5%    50.0%
+  unanswerable     100.0%        -
+
+Estimated points (the grade uses the private set):
+  Task 1.1   8.00 / 8
+  Task 1.2   7.00 / 7
+  Task 2.1   5.00 / 5
+  Task 2.2  10.00 / 10
+  Task 2.3   0.00 / 15
+  Task 3     0.00 / 10
+  Task 4    12.00 / 20
+  Total     42.00 / 75
+
+Your usage: {'llm_calls': 0, 'llm_input_tokens': 0, 'llm_output_tokens': 0, 'cost_usd': 0.0}
+Generator usage: {'llm_calls': 60, 'llm_input_tokens': 82882, 'llm_output_tokens': 176, 'cost_usd': 0.0125}
+Time: 8.5s (index 1.1s, retrieval 0.0s)
+
+V3: recall=43.5%; kept=100.0%; rejected=0.0%; offline points=30.00/55
