@@ -1,6 +1,5 @@
 # FTEC5660-HW4
 
-<!-- HW4_TASK5_START -->
 ## Homework 4 solution
 
 ### Pipeline and design
@@ -25,8 +24,6 @@ My pipeline extracts the report company, fiscal year and document type from the 
 ### Controlled experimental setup
 
 All variants use the same 40 public documents and 60 questions, the same provided scoring functions, the same fixed generator (deepseek-v4-flash, temperature 0), and at most five retrieved chunks. BM25 k1=1.4 and b=0.65 are fixed across every row; B0 uses lower-cased whitespace tokens. The RecursiveCharacterTextSplitter has chunk_size=1200 and chunk_overlap=150 and stays unchanged until the chunking component is replaced. Every row retains the required document metadata. The teacher-supplied generator already formats metadata headers for every variant; V5 changes only the additional inline header inside chunk text. Every pre-V9 variant retains a global BM25 fallback when metadata yields no candidates, so abstention is introduced only at V9. V6 and V7 use identical candidate scores and equal maximum evidence budgets; only company allocation changes. V8 then changes the budget alone. For V9, a check asserts that all 60 retrieved passage lists exactly match the submitted implementation. Each adjacent feature vector differs in exactly one boolean component, verified before execution. No benchmark answers or evidence labels are used to select retrieved chunks; labels are read only for evaluation.
-
-Python: 3.11.0. Submitted hw4.py SHA-256: `9561ac164aaacc631b151272c988785dc9bc61bdb8747ffb3f8e18dd6b893146`. The script verifies that this file and its teacher-provided section remain unchanged.
 
 ### Ablation results
 
@@ -108,8 +105,24 @@ Install the original requirements, set DEEPSEEK_API_KEY in the local .env, then 
 python task5_ablation.py --project . --online --write-readme
 ```
 
-The script runs ten variants sequentially in isolated subprocesses, each with a 29-minute external limit. A timed-out or failed run is marked incomplete and is not reused as a valid result. Ten experiments may take more than 30 minutes in total; the assignment's limit applies to each run. No model, prompt, scoring function, teacher runner or submitted student source file is changed. Only the five permitted student function bindings change temporarily inside each experimental process.
+Evidence directory: `task5_results/`. Each variant contains `results_offline.csv`, `evidence.json`, `metrics.json` and `run_log.txt`. After an online run it additionally contains the official runner's `results.csv` with generated answers and correctness flags. `ablation_summary.csv` aggregates the measured values.
 
-Evidence directory: `task5_results/`. Each variant contains `results_offline.csv`, `evidence.json`, `metrics.json` and `run_log.txt`. After an online run it additionally contains the official runner's `results.csv` with generated answers and correctness flags. `ablation_summary.csv` aggregates the measured values. Commit the script, README report and the experiment results used in the table; never commit .env or index files.
 
-<!-- HW4_TASK5_END -->
+## Homework 4 Task 6: Reflection
+
+Ten years from now, if powerful personal AI agents are available to everyone, I would want to be someone who exercises independent judgment, takes responsibility for decisions, and remains attentive to other people. AI may handle much of the writing, programming, and analysis that currently demonstrate professional ability. In that world, I would still want to understand the problems I work on, decide which outcomes matter, and explain why a decision deserves trust.
+
+This homework gave me a practical reason to value that understanding. In the final ablation experiment, the system achieved 100% retrieval recall but answered only 59 of 60 questions correctly. For one question, the retrieved passage contained the correct 2023 figure, yet the generator returned the 2024 figure. This showed me that finding relevant evidence and interpreting it correctly are separate achievements. Using AI assistance did not remove the need to examine the results. I still needed to understand what each metric measured, recognize a discrepancy, and report the actual outcome accurately. This experience helped me see responsibility as something I must retain when delegating work.
+
+My ambitions to understand finance, improve logistics and supply chains, and solve practical problems would still matter. These fields involve choices about limited resources and their effects on people. A highly efficient system can still serve the wrong objective or overlook someone’s needs. I would remain interested in improving the availability and reliability of essential products, particularly medical devices and supplies. AI could make analysis easier, while the purpose of the work would continue to come from the people who depend on the system.
+
+Beyond productivity and professional achievements, I would want to be known as dependable, honest, and considerate. I would like people to feel comfortable telling me that I have misunderstood something. I would want to acknowledge help, admit uncertainty, and keep promises even when doing so is inconvenient. These qualities require repeated choices in everyday life. A polished answer or an impressive project would mean less to me if the people around me could not rely on my conduct.
+
+I would also remain willing to struggle with learning and relationships. Even if an AI agent could solve a statistics problem immediately, I would still want to work through enough of the reasoning to explain it myself. That effort develops the judgment needed to notice when an answer is inappropriate. Similarly, I would want to practise listening, resolving disagreements, and expressing difficult thoughts in my own words. The time and discomfort involved can deepen understanding and trust. I would choose some of these struggles because participating in them shapes the person I become.
+
+The skills and experiences that would keep me valuable include asking useful questions, evaluating evidence, understanding context, and communicating with people whose priorities differ from mine. For logistics problems, that means learning how a recommendation affects the workers, customers, and organisations expected to use it. Models can represent costs and constraints, but observation and conversation help reveal which assumptions are incomplete. I would therefore need experience beyond producing reports: meeting people, observing operations, and remaining open to correction.
+
+If my value were no longer determined mainly by what I could produce, I would define myself through my commitments, relationships, and choices. I would ask whether I acted fairly, whether I accepted responsibility, and whether I contributed to something I considered worthwhile. My identity could include professional competence without depending entirely on constant achievement.
+
+Starting tomorrow, I should use AI more deliberately. Before asking for help, I can write down my own understanding of the problem. After receiving an answer, I can check its key assumptions and explain its reasoning without copying the wording. I should document errors and limitations as carefully as successful results, and reserve regular time for independent learning and relationships. These habits would help me grow into someone who can use increasingly capable agents while continuing to develop a considered sense of who I am.
+
