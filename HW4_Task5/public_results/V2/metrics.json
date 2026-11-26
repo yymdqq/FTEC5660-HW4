@@ -1,0 +1,59 @@
+{
+  "python": "3.11.18",
+  "documents": 40,
+  "questions": 60,
+  "chunks": 368,
+  "recall_at_5": 0.21739130434782608,
+  "kept": 1.0,
+  "rejected": 0.0,
+  "parse_accuracy": 0.0,
+  "category_recall": {
+    "comparison": 0.0,
+    "fact": 0.6666666666666666,
+    "table": 0.09090909090909091
+  },
+  "points_offline": {
+    "1.1": 8.0,
+    "1.2": 7.0,
+    "2.1": 5.0,
+    "2.2": 0.0,
+    "2.3": 0.0,
+    "3": 0.0
+  },
+  "offline_points": 20.0,
+  "offline_maximum": 55,
+  "index_seconds": 0.8116529039998568,
+  "offline_seconds": 0.8466533219998382,
+  "answer_accuracy": null,
+  "end_to_end_seconds": null,
+  "student_usage": {
+    "llm_calls": 0,
+    "llm_input_tokens": 0,
+    "llm_output_tokens": 0,
+    "cost_usd": 0.0
+  },
+  "generator_usage": {
+    "llm_calls": 0,
+    "llm_input_tokens": 0,
+    "llm_output_tokens": 0,
+    "cost_usd": 0.0
+  },
+  "variant": "V2",
+  "change": "Financial tokenizer",
+  "features": {
+    "tables": true,
+    "tokenizer": true,
+    "metadata": false,
+    "row_chunks": false,
+    "headers": false,
+    "metric_rank": false,
+    "balance": false,
+    "evidence_budget": false,
+    "abstention": false
+  },
+  "hw4_sha256": "9561ac164aaacc631b151272c988785dc9bc61bdb8747ffb3f8e18dd6b893146",
+  "provided_sha256": "0b580fdabae5fe69324d3bef62d82f418e8fe17b7155659c92bc198680fa0b2d",
+  "script_sha256": "1e765d91f2edbfa8eac43409f710b96f884aefe0187a187af167366321432dd2",
+  "dataset_sha256": "6c9cad34ae3374485e304cbee11108affb4ff8b5d2b799057ecd4f90a87f776e",
+  "status": "OFFLINE_ONLY: generator accuracy and API time not measured"
+}

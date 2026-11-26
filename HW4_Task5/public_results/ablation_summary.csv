@@ -1,0 +1,11 @@
+variant,change,chunks,recall_at_5,comparison_recall,kept,rejected,parse_accuracy,offline_points_out_of_55,offline_seconds,answer_accuracy,end_to_end_seconds,generator_calls,status
+B0,Naive RAG baseline,346,0.2826086956521739,0.0,1.0,0.0,0.0,12.0,0.4928342210005212,,,0,OFFLINE_ONLY: generator accuracy and API time not measured
+V1,HTML tables to labelled text,368,0.2608695652173913,0.08333333333333333,1.0,0.0,0.0,20.0,0.941301757000474,,,0,OFFLINE_ONLY: generator accuracy and API time not measured
+V2,Financial tokenizer,368,0.21739130434782608,0.0,1.0,0.0,0.0,20.0,0.8466533219998382,,,0,OFFLINE_ONLY: generator accuracy and API time not measured
+V3,Query parsing and metadata filter,368,0.43478260869565216,0.0,1.0,0.0,1.0,30.0,0.912239552999381,,,0,OFFLINE_ONLY: generator accuracy and API time not measured
+V4,HTML paragraphs and table-row chunks,4308,0.4782608695652174,0.0,1.0,0.0,1.0,30.0,1.7018324190012208,,,0,OFFLINE_ONLY: generator accuracy and API time not measured
+V5,Contextual chunk headers,4308,0.8260869565217391,0.4166666666666667,1.0,0.0,1.0,42.22826086956522,1.6390640739991795,,,0,OFFLINE_ONLY: generator accuracy and API time not measured
+V6,Financial-metric ranking,4308,1.0,1.0,1.0,0.0,1.0,45.0,2.0520307579990913,,,0,OFFLINE_ONLY: generator accuracy and API time not measured
+V7,Per-company balanced selection,4308,1.0,1.0,1.0,0.0,1.0,45.0,2.053147398000874,,,0,OFFLINE_ONLY: generator accuracy and API time not measured
+V8,Compact evidence budget,4308,1.0,1.0,1.0,0.0,1.0,45.0,2.0600652069988428,,,0,OFFLINE_ONLY: generator accuracy and API time not measured
+V9,Evidence-based abstention,4308,1.0,1.0,1.0,1.0,1.0,55.0,1.7280262879994552,,,0,OFFLINE_ONLY: generator accuracy and API time not measured

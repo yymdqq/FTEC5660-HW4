@@ -1,0 +1,18 @@
+{
+  "variants_expected": 10,
+  "variants_available": 10,
+  "online_complete": false,
+  "pending_online": [
+    "B0",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9"
+  ],
+  "note": "The report must not be described as a fully measured online ablation until online_complete is true."
+}

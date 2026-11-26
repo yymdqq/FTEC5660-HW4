@@ -1,0 +1,12 @@
+{
+  "python": "3.11.18",
+  "offline_variants": 10,
+  "single_component_checks": "passed",
+  "final_retrieval_matches_submitted": "all 60 questions passed",
+  "protected_source_unchanged": true,
+  "readme_existing_content_preserved": true,
+  "readme_repeated_update_idempotent": true,
+  "official_runner_csv_integration": "passed with 14 genuinely unanswerable questions; zero API calls",
+  "full_variant_online_accuracy": "NOT MEASURED",
+  "user_reported_final_only": "100% accuracy; 75/75; 7.5 seconds; not used to fill ablation accuracy columns"
+}
